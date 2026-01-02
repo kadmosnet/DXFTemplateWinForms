@@ -125,7 +125,7 @@
             // 
             // dxfReaderNETControl1
             // 
-            dxfReaderNETControl1.ContinuousHighlight = false;
+            
             dxfReaderNETControl1.CustomCursor = DXFReaderNET.CustomCursorType.None;
             dxfReaderNETControl1.CustomCursorColor = Color.White;
             dxfReaderNETControl1.DistributionCode = "";

@@ -107,7 +107,7 @@ namespace DXFTemplateWinForms
             if (mWindowState == "Maximized") this.WindowState = FormWindowState.Maximized;
 
             dxfReaderNETControl1.HighlightEntityOnHover = Convert.ToBoolean(Registry.GetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightEntityOnHover", false).ToString());
-            dxfReaderNETControl1.ContinuousHighlight = Convert.ToBoolean(Registry.GetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "ContinuousHighlight", false).ToString());
+           
             dxfReaderNETControl1.HighlightNotContinuous = Convert.ToBoolean(Registry.GetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightNotContinuous", false).ToString());
             dxfReaderNETControl1.HighlightGrabPointsOnHover = Convert.ToBoolean(Registry.GetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightGrabPointsOnHover", false).ToString());
 
@@ -186,7 +186,7 @@ namespace DXFTemplateWinForms
 
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "GridDisplay", System.Convert.ToInt32(dxfReaderNETControl1.GridDisplay));
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightEntityOnHover", dxfReaderNETControl1.HighlightEntityOnHover);
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "ContinuousHighlight", dxfReaderNETControl1.ContinuousHighlight);
+           
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightNotContinuous", dxfReaderNETControl1.HighlightNotContinuous);
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\" + ProgramName, "HighlightGrabPointsOnHover", dxfReaderNETControl1.HighlightGrabPointsOnHover);
 
